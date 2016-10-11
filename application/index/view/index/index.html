@@ -1,0 +1,438 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>体验式云创业系统 - 体验式云创业系统</title>
+  <meta name="keywords" content="体验式云创业系统 直销进人系统" />
+  <meta name="description" content="德道云创系统-体验式云创业系统。" />
+  <script type="text/javascript" src="http://www.ddyctd.com/include/js/jquery.js"></script>
+  <script type="text/javascript" src="http://www.ddyctd.com/include/js/scroll.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://www.ddyctd.com/template/default/index/css/common.css" />
+  <link rel="stylesheet" type="text/css" href="http://www.ddyctd.com/template/default/index/css/index_style.css" />
+</head>
+<body >
+<!--Top-->
+<div class="Top clr">
+  <div class="wd1150">
+      <div class="Logo fl"><a href=""><img src="http://www.ddyctd.com/template/default/index/images/logo.jpg" width="448" height="63" /></a></div>
+        <div class="right fr">
+          <span><img src="http://www.ddyctd.com/template/default/index/images/qq.png" /><img src="http://www.ddyctd.com/template/default/index/images/wx.png" /></span><a onclick="ShowBox1()" class="head_top_fl_dl" style="line-height:38px;"> 登陆</a>
+        </div>
+    </div>
+</div>
+<!--Top End-->
+<!--Banner End-->
+<script type="text/javascript" src="http://www.ddyctd.com/include/js/huandengpian.js"></script>
+<div class="fullSlide">
+    <div class="bd">
+        <ul>
+            <li style="background:url(http://www.ddyctd.com/template/default/index/images/banner1.jpg) no-repeat center"></li>
+            <li style="background:url(http://www.ddyctd.com/template/default/index/images/banner2.jpg) no-repeat center"></li>
+            <li style="background:url(http://www.ddyctd.com/template/default/index/images/banner3.jpg) no-repeat center"></li>
+        </ul>
+    </div>
+    <div class="hd"><ul></ul></div>
+    <span class="prev"></span> <span class="next"></span>
+</div>
+<script type="text/javascript">
+    // 幻灯片js
+    jQuery(".fullSlide").hover(function() {
+        jQuery(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)
+    },
+    function() {
+        jQuery(this).find(".prev,.next").fadeOut()
+    });
+    jQuery(".fullSlide").slide({
+        titCell: ".hd ul",
+        mainCell: ".bd ul",
+        effect: "fold",
+        autoPlay: true,
+        autoPage: true,
+        trigger: "click",
+        startFun: function(i) {
+            var curLi = jQuery(".fullSlide .bd li").eq(i);
+            if ( !! curLi.attr("_src")) {
+                curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
+            }
+        }
+    });
+</script>
+<!--Banner End-->
+<div class="Page1" id="lijizhuce">
+  <div class="wd1150">
+        <div class="page1_con">
+            <div class="hyzc_Box fl">
+                <div class="zhucecg">
+                    <form action="http://www.ddyctd.com/index.php?mod=do&act=registersql" method='post'>
+	<div class="regmenu_label">
+		<label>手机：</label>
+		<input type="text" name="reg[user_phone]" oninput="Inputsj(event)" onpropertychange="IeInputsj(event)" class="regmenu_input" id="user_phone" placeholder="输入11位手机号码"/>
+		<div class="regmenu_poptip" id="regmenu_poptip06"><div class="regmenu_arrow"><em></em><span></span></div><span class="regmenu_content" id="user_phones"></span></div>
+	</div>
+	<div class="regmenu_label"  style="display: none;">
+		<input type="text" name="reg[user_name_tj]" class="regmenu_input" value="w12760" id="user_name_tj" readonly="readonly"/>
+	</div>
+	<div class="regmenu_label">
+		<label>QQ：</label>
+		<input type="text" name="reg[user_qq]" oninput="Inputqq(event)" onpropertychange="IeInputqq(event)" class="regmenu_input" id="user_qq" placeholder="请输入6到11位的QQ号"/>
+		<div class="regmenu_poptip" id="regmenu_poptip01"><div class="regmenu_arrow"><em></em><span></span></div><span class="regmenu_content" id="user_qqs"></span></div>
+	</div>
+	<div class="regmenu_label">
+		<label>微信</label>
+		<input type="text" name="reg[aliwangwang]" oninput="Inputqq(event)" onpropertychange="IeInputqq(event)" class="regmenu_input" id="aliwangwang" placeholder="请输入微信号"/>
+		<div class="regmenu_poptip" id="regmenu_poptip02"><div class="regmenu_arrow"><em></em><span></span></div><span class="regmenu_content" id="aliwangwang"></span></div>
+	</div>
+	<div class="regmenu_label">
+		<label>设置密码：</label>
+		<input type="password" name="reg[user_pw]" oninput="Inputpw(event)" onpropertychange="IeInputpw(event)" class="regmenu_input" id="user_pw" placeholder="请输入密码"/>
+		<div class="regmenu_poptip" id="regmenu_poptip04"><div class="regmenu_arrow"><em></em><span></span></div><span class="regmenu_content" id="user_pws"></span></div>
+	</div>
+	<div class="regmenu_label">
+		<label>确认密码：</label>
+		<input type="password" name="cpw" oninput="Inputpws(event)" onpropertychange="IeInputpws(event)" class="regmenu_input" id="cpw" placeholder="请再次输入密码"/>
+		<div class="regmenu_poptip" id="regmenu_poptip05"><div class="regmenu_arrow"><em></em><span></span></div><span class="regmenu_content" id="cpws"></span></div>
+	</div>
+	<input type="hidden" name="reg[user_name_tj]" value="w12760" id="user_name_tj"/>
+	<p class="red">* 信息务必真实，以免影响收取超值礼包！</p>
+	<p><input type="submit" id="submit" class="zhuce marR7" value="注册"/><input type="button" onclick="ShowBox1()" class="denglu" value="登录"/></p>
+</form>                </div>
+                <div class="yydt">
+                    <div class="tit"><img src="http://www.ddyctd.com/template/default/index/images/zxhydt.png" /></div>
+                    <div class="dtnr list_lh">
+                        <ul>
+                                                                                                                <li><span>欢迎</span><span class="name">慧**</span><span>加入德道国际!</span></li>
+                                                                                    <li><span>欢迎</span><span class="name">w**</span><span>加入德道国际!</span></li>
+                                                                                    <li><span>欢迎</span><span class="name">w**</span><span>加入德道国际!</span></li>
+                                                                                    <li><span>欢迎</span><span class="name">w**</span><span>加入德道国际!</span></li>
+                                                                                    <li><span>欢迎</span><span class="name">w**</span><span>加入德道国际!</span></li>
+                                                                                    <li><span>欢迎</span><span class="name">w**</span><span>加入德道国际!</span></li>
+                                                                                    <li><span>欢迎</span><span class="name">w**</span><span>加入德道国际!</span></li>
+                                                                                    <li><span>欢迎</span><span class="name">w**</span><span>加入德道国际!</span></li>
+                                                                                    <li><span>欢迎</span><span class="name">w**</span><span>加入德道国际!</span></li>
+                                                                                    <li><span>欢迎</span><span class="name">w**</span><span>加入德道国际!</span></li>
+                                                                                                                <li><span>恭喜</span><span class="name">钱**</span><span>成为正式会员</span></li>
+                                                        <li><span>恭喜</span><span class="name">w**</span><span>成为正式会员</span></li>
+                                                        <li><span>恭喜</span><span class="name">黄**</span><span>成为正式会员</span></li>
+                                                        <li><span>恭喜</span><span class="name">w**</span><span>成为正式会员</span></li>
+                                                        <li><span>恭喜</span><span class="name">李**</span><span>成为正式会员</span></li>
+                                                        <li><span>恭喜</span><span class="name">w**</span><span>成为正式会员</span></li>
+                                                        <li><span>恭喜</span><span class="name">w**</span><span>成为正式会员</span></li>
+                                                        <li><span>恭喜</span><span class="name">三**</span><span>成为正式会员</span></li>
+                                                        <li><span>恭喜</span><span class="name">孔**</span><span>成为正式会员</span></li>
+                                                        <li><span>恭喜</span><span class="name">w**</span><span>成为正式会员</span></li>
+                                                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="radio fr">
+              <embed src="http://cloud.video.taobao.com/play/u/499028060/p/1/e/1/t/1/40999091.swf" wmode="transparent" allowFullScreen="true" quality="high" width="100%" height="100%" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+            </div>
+         </div>
+    </div>
+</div>
+<div class="page2">
+  <div class="wd1150">
+      <div class="page2_Box">
+          <p style="padding-top:95px;"><img src="http://www.ddyctd.com/template/default/index/images/page2_txt.png" /></p>
+            <div class="zsds clr">
+              <ul class="clr">
+                  <li>
+                      <div class="left">
+                          <img src="http://www.ddyctd.com/template/default/index/images/ren.jpg" />
+                            <div class="zsBox">谢总</div>
+                        </div>
+                        <div class="right">曾是中学教师，后进修清华大学EMBA，专注互联网创业11年，网商领域的理论派和实战派专家，他的粉丝已数百万，德道国际云商系统核心之一。座右铭：成为别人生命中的天使！</div>
+                    </li>
+                    <li>
+                      <div class="left">
+                          <img src="http://www.ddyctd.com/template/default/index/images/2zf.jpg" />
+                            <div class="zsBox">郭总</div>
+                        </div>
+                        <div class="right">清华大学EMBA毕业，专注直销15年，网络创业8年，德道国际云创系统核心之一。座右铭：系统是成功的秘密！</div>
+                    </li>
+                    <li>
+                      <div class="left">
+                          <img src="http://www.ddyctd.com/template/default/index/images/3cy.jpg" />
+                            <div class="zsBox">韩总</div>
+                        </div>
+                        <div class="right">北京外国语大学硕士毕业，曾任奥组委国联部经理，北京某国有银行信贷部经理，短短数年，已经在互联网上创下了辉煌的战绩,目前为德道国际云创系统核心之一.座右铭：事在人为，一切皆有可能！</div>
+                    </li>
+                    <li>
+                      <div class="left">
+                          <img src="http://www.ddyctd.com/template/default/index/images/4fd.jpg" />
+                            <div class="zsBox">纪总</div>
+                        </div>
+                        <div class="right">清华大学EMBA，自动化营销第一人，德道国际云创系统核心之一，座右铭：成为别人生命中的天使！</div>
+                    </li>
+                    <li>
+                      <div class="left">
+                          <img src="http://www.ddyctd.com/template/default/index/images/5gm.jpg" />
+                            <div class="zsBox">赵总</div>
+                        </div>
+                        <div class="right">国内某知名企业销售总监，7年互联网理论派实战派教练、徳道国际云创系统核心之一，座右铭：成为别人生命中的天使！</div>
+                    </li>
+                    <li>
+                      <div class="left">
+                          <img src="http://www.ddyctd.com/template/default/index/images/6wh.jpg" />
+                            <div class="zsBox">吴总</div>
+                        </div>
+                        <div class="right">清华大学EMBA，专注网络创业10年，精通网络营销，德道国际云创系统核心之一，座右铭：宁愿为梦想而忙碌，也不要因为忙碌而失去梦想。</div>
+                    </li>
+                    <li>
+                      <div class="left">
+                          <img src="http://www.ddyctd.com/template/default/index/images/7zy.jpg" />
+                            <div class="zsBox">周总</div>
+                        </div>
+                        <div class="right">12年互联网营销实战经验，精通网络技术与营销，德道国际云商系统核心之一。座右铭：成为别人生命中的天使！</div>
+                    </li>
+                    <li>
+                      <div class="left">
+                          <img src="http://www.ddyctd.com/template/default/index/images/8hy.jpg" />
+                            <div class="zsBox">闫总</div>
+                        </div>
+                        <div class="right">从小家境优越，但却经历坎坷，在人生低谷时，遇上德道国际云创系统，并在很短的时间内，成长为系统优秀领导人，创造出非凡的业绩。座右铭：成为别人生命中的天使。</div>
+                    </li>
+                    <li>
+                      <div class="left">
+                          <img src="http://www.ddyctd.com/template/default/index/images/9yx.jpg" />
+                            <div class="zsBox">杨总</div>
+                        </div>
+                        <div class="right">某知名企业销售经理，直销精英，德道国际云创系统核心之一，座右铭：没有永远的王者，只有不断的超越！</div>
+                    </li>
+                </ul>
+            </div>
+            <img src="http://www.ddyctd.com/template/default/index/images/page2_txt2.png" style="padding-top:60px;" />
+        </div>
+    </div>
+</div>
+<div class="page3"><a href="#lijizhuce"></a></div>
+<div class="page4">
+  <div class="wd1150">
+    <div class="page4_con">
+      <p class="tit">“全民云创时代”已经到来，你想担当什么角色？</p>
+      <p class="txt">今天你已经离不开互联网了<br />就看你是想利用互联网，还是被互联网利用。<br />你可以没有钱，但你不能没有手机<br />你可以不刷牙，但你不能不刷微信<br />“全民云创时代”已经到来，你想担当什么角色？</p>
+      <p class="signup"><a href="#lijizhuce">马上报名！当赢家！</a></p>
+    </div>
+  </div>
+</div>
+<div class="page5"><a href="#lijizhuce"></a></div>
+<div class="xfzc" id="reception">
+    <a class="xfzc_gb" href="javascript:;" onclick="closereception();" title="关闭"></a>
+    <a href="#lijizhuce"><img src="http://www.ddyctd.com/template/default/index/images/mszc.png" /></a>
+</div>
+<!-- 登陆弹出 -->
+<div id="ddiv1"></div>
+<div id="tdiv1">
+  <div class="denglu_guanbiii" onclick="closediv1()" title="关闭"></div>
+  <div class="denglu_qiehuan">
+    <div class="denglu_qiehuan_01" id="denglu_qiehuan_01"></div>
+    <div class="denglu_qiehuan_02" id="denglu_qiehuan_02"></div>
+  </div>
+  <div class="denglu_weixin" id="denglu_weixin">
+    <div class="denglu_poptip">
+        <div class="denglu_arrow"><em></em><span></span></div>
+        <div class="denglu_content"><i class="icon iconfont">&#xe640;</i>账号输入登录在这哦</div>
+     </div>
+        <img src="http://www.ddyctd.com/data/ecimgcode/tg.png" alt="http://www.ddyctd.com/api.php?mod=weixin&act=login&id=5mgh0840cuel09ks7ke59fltp2" id="ecimgcode" class="ercode"/>
+    <div class="denglu_xianshiwx" id="denglu_xianshiwx"><img src="http://www.ddyctd.com/template/default/index/images/weixin_logintip.png" alt="" /></div>
+    <p>请使用微信扫描二维码！</p>
+    <p><a id="denglu_bangzhu">使用帮助</a><em>|</em><a href="http://www.ddyctd.com/index.php/page/register" target="_blank">没有账号？</a></p>
+  </div>
+  <div class="denglu_putong" id="denglu_putong">
+    <div class="denglu_poptip">
+        <div class="denglu_arrow"><em></em><span></span></div>
+        <div class="denglu_content"><i class="icon iconfont">&#xe63f;</i>微信扫码登录更安全</div>
+     </div>
+    <form action="http://www.ddyctd.com/index.php?mod=do&act=loginsql" method="post">
+      <p class="denglu_label"><i class="icon iconfont">&#xe63d;</i><input type="text" id="denglu_text" name="login[user_name]" placeholder="输入手机号码或QQ号码" class="denglu_input"/></p>
+      <p class="denglu_label"><i class="icon iconfont">&#xe63e;</i><input type="password" id="denglu_password" placeholder="输入密码" name="login[user_pw]" class="denglu_input"/></p>
+      <input type="hidden" name="fwurl" value="http://www.ddyctd.com/w12760/v1.html" />
+      <input type="submit" id="login" value="登陆" class="denglu_red" />
+    </form>
+    <div class="denglu_mfzc">
+      <a href="http://www.ddyctd.com/index.php/page/getpw" class="denglu_colorblue2 fr">忘记密码？</a>
+      <a href="http://www.yc52.cn/#lijizhuce" onclick="closediv1()" class="denglu_colorblue1 fl">免费注册</a>
+    </div>
+  </div>
+</div>
+<link rel="stylesheet" type="text/css" href="http://www.ddyctd.com/template/default/index/css/denglu.css" />
+<link rel="stylesheet" type="text/css" href="http://www.ddyctd.com/template/default/index/css/jquery.lightbox.css" />
+<link rel="stylesheet" type="text/css" href="http://www.ddyctd.com/include/css/fonts.css" />
+<script type="text/javascript" src="http://www.ddyctd.com/include/js/scroll.js"></script>
+<script type="text/javascript" src="http://www.ddyctd.com/include/js/wap.js"></script>
+<script type="text/javascript" src="http://www.ddyctd.com/include/js/showpackage.js"></script>
+<script type="text/javascript" src="http://www.ddyctd.com/template/default/index/js/jquery.lightbox.min.js"></script>
+<script type="text/javascript">
+var website='http://www.ddyctd.com/';
+var msg='';
+var ok='<i>输入正确</i>';
+var sec=90;
+
+function smartFloat(){
+  var ceshi = $('#tguserbox').html();
+  var erweima = $('#tguserbox .gerenxinxi_erweima').attr('src');
+  var kefulj = $('#tguserbox .gerenxinxi_qq a').attr('href');
+  var kefuqq = $('#tguserbox .gerenxinxi_qq a').html();
+  var kefusj = $('#tguserbox .gerenxinxi_shouji').html();
+  $('#wximgcode1').attr('src',erweima);
+  $('#kefu_auto_a3_kfqq').attr('href',kefulj);
+  $('#kefu_auto_a3_kfqq').html(kefuqq);
+  $('#kefu_auto_a3_kfsj').html(kefusj);
+}
+
+//获取带参数的微信二维码
+$(function(){
+  var data={sb:1,id:'12760'};
+  var r=getajax(website+'api.php?mod=ajaxp&act=wxcode',data);
+  if(r)
+  $('#wximgcode').attr('src',r);
+});
+
+//获取手机验证码
+$('#btn_phone_code').click(function(){
+  if(sec>=90){
+    var phone=$('#user_phone').val();
+    var r=checkstr(phone,'phone');
+    if(r){
+      var onurl=website+'api.php?mod=ajax&act=checkonly'; 
+      var v=getajax(onurl,{table:'user',fd:'user_phone',v:phone});
+      if(v=='90'){
+        alert('手机号已经存在');
+        return false;     
+      }
+      var url=website+'api.php?mod=ajaxp&act=sendsms';
+      var data={phone:phone};
+      $.post(url,data,function(s){
+        if(s==0){
+          talert('验证码已经发送到手机上，请注意查收',1);
+          uptimephonecode();
+        }else alert(s);
+      });
+      
+    }
+    else xtalert('请输入正确的手机号码');
+    $('#xtalertxs_a').click(function(){
+      $('#user_phone').focus();
+    });
+  }
+  else talert('请于'+sec+'秒以后重新获取');
+});
+function uptimephonecode(){
+  if(sec<=0){
+    sec=90;
+    $('#btn_phone_code').val('获取验证码');
+  }else{
+    sec--;
+    $('#btn_phone_code').val(sec+'s 后重新获取');
+    setTimeout(uptimephonecode,1000);
+  }
+}
+//获取手机验证码结束
+
+//提交开始校验
+$('#submit').click(function(){
+  if(!ckuserphone()){
+    xtalert(msg);
+    $('#xtalertxs_a').click(function(){
+      $('#user_phone').focus();
+    });
+    return false;
+  }
+  if(!ckuserqq()){
+    xtalert(msg);
+    $('#xtalertxs_a').click(function(){
+      $('#user_qq').focus();
+    });
+    return false;
+  }
+  if(!ckuserpw()){
+    xtalert(msg);
+    $('#xtalertxs_a').click(function(){
+      $('#user_pw').focus();
+    });
+    return false;
+  }
+  if(!ckcpw()){
+    xtalert(msg);
+    $('#xtalertxs_a').click(function(){
+      $('#cpw').focus();
+    });
+    return false;
+  }
+  if(!cktjname()){
+    xtalert(msg);
+    $('#xtalertxs_a').click(function(){
+      $('#user_name_tj').focus();
+    });
+    return false;
+  }
+  return true;
+});
+// 注册提交验证结束
+
+//执行不支持placeholder属性的功能
+jQuery(function(){
+  JPlaceHolder.init();    
+});
+
+// 最新会员动态调用
+$(function(){
+  $("div.list_lh").myScroll({
+    speed:70, //数值越大，速度越慢
+    rowHeight:31 //li的高度
+  });
+});
+
+// 注册登陆框切换功能
+denglutc('#denglu_qiehuan_01','#denglu_qiehuan_02','#denglu_weixin','#denglu_putong','#denglu_bangzhu','#denglu_xianshiwx','106','104');
+
+// 登陆相关js
+var sid='5mgh0840cuel09ks7ke59fltp2';
+var t=null;
+$(function(){
+  var url=$('#ecimgcode').attr('alt');
+  var data={url:url};
+  $.post(website+'api.php?mod=ajax&act=ecimgcode',data,function(r){
+    if(r)$('#ecimgcode').attr('src',r);
+  });
+  t=setTimeout(timego,1000);
+});
+$("#login").click(function(){
+  if ($(":input[name='login[user_name]']").val() == '') {
+    xtalert('账号不能为空');
+    $('#xtalertxs_a').click(function(){
+      $('#denglu_text').focus();
+    });
+    return false;
+  }
+  if ($(":input[name='login[user_pw]']").val() == '') {
+    xtalert('密码不能为空');
+    $('#xtalertxs_a').click(function(){
+      $('#denglu_password').focus();
+    });
+    return false;
+  } 
+});
+var data={sid:sid};
+function timego(){
+  $.post(website+'api.php?mod=ajax&act=loginstatus',data,function(r){
+    if(r==0)setTimeout(timego,1000);
+    if(r==1){
+      window.location.href=website+'user.php';
+    }
+  });
+}
+</script>
+        
+        <iframe style="display:none;" id="qq_iframe" src=""></iframe>
+<script type="text/javascript">
+  setTimeout(function(){
+    src = "tencent://message/?uin=3500921437&Site=&menu=yes";
+    $('#qq_iframe').attr('src', src);
+  }, 5000)
+  function closereception(){
+    $("#reception").slideUp("normal");
+  }
+</script>
+</body>
+</html>
