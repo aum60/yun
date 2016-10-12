@@ -10,7 +10,7 @@ class Index extends Controller
 	public function api()
     {
 		$wechatObj = new Api();
-		$wechatObj->valid();
+		return $wechatObj->valid();
 		
 		exit;
 		return $this->fetch();
