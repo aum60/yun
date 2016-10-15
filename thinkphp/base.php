@@ -34,7 +34,7 @@ defined('ENV_PREFIX') or define('ENV_PREFIX', 'PHP_'); // 环境变量的配置�
 define('APP_STATIC', URL . 'static' . DS);
 define('APP_CSS', APP_STATIC. 'css' . DS);	//静态资源样式目录
 define('APP_JS', APP_STATIC . 'js' . DS);	//静态资源脚本目录
-define('APP_IMG', APP_STATIC . 'img' . DS);	//静态资源图片目录
+define('APP_IMG', APP_STATIC . 'images' . DS);	//静态资源图片目录
 
 // 环境常量
 define('IS_CLI', PHP_SAPI == 'cli' ? true : false);
