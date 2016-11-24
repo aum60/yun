@@ -1,15 +1,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>德道国际云创系统 - 体验式云创业系统</title>
-  <meta name="keywords" content="体验式云创业系统 直销进人系统" />
-  <meta name="description" content="引领移动互联网创业浪潮的绝佳商机
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>德道国际云创系统 - 体验式云创业系统</title>
+    <meta name="keywords" content="体验式云创业系统 直销进人系统" />
+    <meta name="description" content="引领移动互联网创业浪潮的绝佳商机
 让你的手机不再是玩具，而变成创业赚钱的工具；您不用担心能力、不用担心口才、不用担心风险，全球首创体验式营销系统为您保驾护航！" />
-  <script type="text/javascript" src="{$Think.const.APP_JS}jquery.js"></script>
-  <script type="text/javascript" src="{$Think.const.APP_JS}scroll.js"></script>
-  <link rel="stylesheet" type="text/css" href="{$Think.const.APP_CSS}common.css" />
-  <link rel="stylesheet" type="text/css" href="{$Think.const.APP_CSS}index_style.css" />
+    <script type="text/javascript" src="{$Think.const.APP_JS}jquery.js"></script>
+    <script type="text/javascript" src="{$Think.const.APP_JS}scroll.js"></script>
+    <link rel="stylesheet" type="text/css" href="{$Think.const.APP_CSS}common.css" />
+    <link rel="stylesheet" type="text/css" href="{$Think.const.APP_CSS}index_style.css" />
 </head>
 <body >
 <!--Top-->
@@ -95,33 +95,16 @@
 	</div>
 	<input type="hidden" name="reg[user_name_tj]" value="w12760" id="user_name_tj"/>
 	<p class="red">* 信息务必真实，以免影响收取超值礼包！</p>
-	<p><input type="submit" id="submit" class="zhuce marR7" value="注册"/><input type="button" onclick="ShowBox1()" class="denglu" value="登录"/></p>
+	<p><input type="button" id="submit" class="zhuce marR7" value="注册"/><input type="button" onclick="ShowBox1()" class="denglu" value="登录"/></p>
 </form>                </div>
                 <div class="yydt">
                     <div class="tit"><img src="http://www.ddyctd.com/template/default/index/images/zxhydt.png" /></div>
                     <div class="dtnr list_lh">
                         <ul>
-                                                                                                                <li><span>欢迎</span><span class="name">慧**</span><span>加入德道国际!</span></li>
-                                                                                    <li><span>欢迎</span><span class="name">w**</span><span>加入德道国际!</span></li>
-                                                                                    <li><span>欢迎</span><span class="name">w**</span><span>加入德道国际!</span></li>
-                                                                                    <li><span>欢迎</span><span class="name">w**</span><span>加入德道国际!</span></li>
-                                                                                    <li><span>欢迎</span><span class="name">w**</span><span>加入德道国际!</span></li>
-                                                                                    <li><span>欢迎</span><span class="name">w**</span><span>加入德道国际!</span></li>
-                                                                                    <li><span>欢迎</span><span class="name">w**</span><span>加入德道国际!</span></li>
-                                                                                    <li><span>欢迎</span><span class="name">w**</span><span>加入德道国际!</span></li>
-                                                                                    <li><span>欢迎</span><span class="name">w**</span><span>加入德道国际!</span></li>
-                                                                                    <li><span>欢迎</span><span class="name">w**</span><span>加入德道国际!</span></li>
-                                                                                                                <li><span>恭喜</span><span class="name">钱**</span><span>成为正式会员</span></li>
-                                                        <li><span>恭喜</span><span class="name">w**</span><span>成为正式会员</span></li>
-                                                        <li><span>恭喜</span><span class="name">黄**</span><span>成为正式会员</span></li>
-                                                        <li><span>恭喜</span><span class="name">w**</span><span>成为正式会员</span></li>
-                                                        <li><span>恭喜</span><span class="name">李**</span><span>成为正式会员</span></li>
-                                                        <li><span>恭喜</span><span class="name">w**</span><span>成为正式会员</span></li>
-                                                        <li><span>恭喜</span><span class="name">w**</span><span>成为正式会员</span></li>
-                                                        <li><span>恭喜</span><span class="name">三**</span><span>成为正式会员</span></li>
-                                                        <li><span>恭喜</span><span class="name">孔**</span><span>成为正式会员</span></li>
-                                                        <li><span>恭喜</span><span class="name">w**</span><span>成为正式会员</span></li>
-                                                    </ul>
+                            {volist name='list' id='vo'}
+                                {$vo}
+                            {/volist}
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -263,176 +246,185 @@
 <script type="text/javascript" src="{$Think.const.APP_JS}showpackage.js"></script>
 <script type="text/javascript" src="{$Think.const.APP_JS}jquery.lightbox.min.js"></script>
 <script type="text/javascript">
-var website='http://www.ddyctd.com/';
-var msg='';
-var ok='<i>输入正确</i>';
-var sec=90;
+    var website='http://www.ddyctd.com/';
+    var msg='';
+    var ok='<i>输入正确</i>';
+    var sec=90;
 
-function smartFloat(){
-  var ceshi = $('#tguserbox').html();
-  var erweima = $('#tguserbox .gerenxinxi_erweima').attr('src');
-  var kefulj = $('#tguserbox .gerenxinxi_qq a').attr('href');
-  var kefuqq = $('#tguserbox .gerenxinxi_qq a').html();
-  var kefusj = $('#tguserbox .gerenxinxi_shouji').html();
-  $('#wximgcode1').attr('src',erweima);
-  $('#kefu_auto_a3_kfqq').attr('href',kefulj);
-  $('#kefu_auto_a3_kfqq').html(kefuqq);
-  $('#kefu_auto_a3_kfsj').html(kefusj);
-}
-
-//获取带参数的微信二维码
-$(function(){
-  var data={sb:1,id:'12760'};
-  var r=getajax(website+'api.php?mod=ajaxp&act=wxcode',data);
-  if(r)
-  $('#wximgcode').attr('src',r);
-});
-
-//获取手机验证码
-$('#btn_phone_code').click(function(){
-  if(sec>=90){
-    var phone=$('#user_phone').val();
-    var r=checkstr(phone,'phone');
-    if(r){
-      var onurl=website+'api.php?mod=ajax&act=checkonly'; 
-      var v=getajax(onurl,{table:'user',fd:'user_phone',v:phone});
-      if(v=='90'){
-        alert('手机号已经存在');
-        return false;     
-      }
-      var url=website+'api.php?mod=ajaxp&act=sendsms';
-      var data={phone:phone};
-      $.post(url,data,function(s){
-        if(s==0){
-          talert('验证码已经发送到手机上，请注意查收',1);
-          uptimephonecode();
-        }else alert(s);
-      });
-      
+    function smartFloat(){
+        var ceshi = $('#tguserbox').html();
+        var erweima = $('#tguserbox .gerenxinxi_erweima').attr('src');
+        var kefulj = $('#tguserbox .gerenxinxi_qq a').attr('href');
+        var kefuqq = $('#tguserbox .gerenxinxi_qq a').html();
+        var kefusj = $('#tguserbox .gerenxinxi_shouji').html();
+        $('#wximgcode1').attr('src',erweima);
+        $('#kefu_auto_a3_kfqq').attr('href',kefulj);
+        $('#kefu_auto_a3_kfqq').html(kefuqq);
+        $('#kefu_auto_a3_kfsj').html(kefusj);
     }
-    else xtalert('请输入正确的手机号码');
-    $('#xtalertxs_a').click(function(){
-      $('#user_phone').focus();
-    });
-  }
-  else talert('请于'+sec+'秒以后重新获取');
-});
-function uptimephonecode(){
-  if(sec<=0){
-    sec=90;
-    $('#btn_phone_code').val('获取验证码');
-  }else{
-    sec--;
-    $('#btn_phone_code').val(sec+'s 后重新获取');
-    setTimeout(uptimephonecode,1000);
-  }
-}
-//获取手机验证码结束
 
-//提交开始校验
-$('#submit').click(function(){
-  if(!ckuserphone()){
-    xtalert(msg);
-    $('#xtalertxs_a').click(function(){
-      $('#user_phone').focus();
+    //获取带参数的微信二维码
+    $(function(){
+        var data={sb:1,id:'12760'};
+        var r=getajax(website+'api.php?mod=ajaxp&act=wxcode',data);
+        if(r)
+            $('#wximgcode').attr('src',r);
     });
-    return false;
-  }
-  if(!ckuserqq()){
-    xtalert(msg);
-    $('#xtalertxs_a').click(function(){
-      $('#user_qq').focus();
-    });
-    return false;
-  }
-  if(!ckuserpw()){
-    xtalert(msg);
-    $('#xtalertxs_a').click(function(){
-      $('#user_pw').focus();
-    });
-    return false;
-  }
-  if(!ckcpw()){
-    xtalert(msg);
-    $('#xtalertxs_a').click(function(){
-      $('#cpw').focus();
-    });
-    return false;
-  }
-  if(!cktjname()){
-    xtalert(msg);
-    $('#xtalertxs_a').click(function(){
-      $('#user_name_tj').focus();
-    });
-    return false;
-  }
-  return true;
-});
-// 注册提交验证结束
 
-//执行不支持placeholder属性的功能
-jQuery(function(){
-  JPlaceHolder.init();    
-});
+    //获取手机验证码
+    $('#btn_phone_code').click(function(){
+        if(sec>=90){
+            var phone=$('#user_phone').val();
+            var r=checkstr(phone,'phone');
+            if(r){
+                var onurl=website+'api.php?mod=ajax&act=checkonly';
+                var v=getajax(onurl,{table:'user',fd:'user_phone',v:phone});
+                if(v=='90'){
+                    alert('手机号已经存在');
+                    return false;
+                }
+                var url=website+'api.php?mod=ajaxp&act=sendsms';
+                var data={phone:phone};
+                $.post(url,data,function(s){
+                    if(s==0){
+                        talert('验证码已经发送到手机上，请注意查收',1);
+                        uptimephonecode();
+                    }else alert(s);
+                });
 
-// 最新会员动态调用
-$(function(){
-  $("div.list_lh").myScroll({
-    speed:70, //数值越大，速度越慢
-    rowHeight:31 //li的高度
-  });
-});
-
-// 注册登陆框切换功能
-denglutc('#denglu_qiehuan_01','#denglu_qiehuan_02','#denglu_weixin','#denglu_putong','#denglu_bangzhu','#denglu_xianshiwx','106','104');
-
-// 登陆相关js
-var sid='5mgh0840cuel09ks7ke59fltp2';
-var t=null;
-$(function(){
-  var url=$('#ecimgcode').attr('alt');
-  var data={url:url};
-  $.post(website+'api.php?mod=ajax&act=ecimgcode',data,function(r){
-    if(r)$('#ecimgcode').attr('src',r);
-  });
-  t=setTimeout(timego,1000);
-});
-$("#login").click(function(){
-  if ($(":input[name='login[user_name]']").val() == '') {
-    xtalert('账号不能为空');
-    $('#xtalertxs_a').click(function(){
-      $('#denglu_text').focus();
+            }
+            else xtalert('请输入正确的手机号码');
+            $('#xtalertxs_a').click(function(){
+                $('#user_phone').focus();
+            });
+        }
+        else talert('请于'+sec+'秒以后重新获取');
     });
-    return false;
-  }
-  if ($(":input[name='login[user_pw]']").val() == '') {
-    xtalert('密码不能为空');
-    $('#xtalertxs_a').click(function(){
-      $('#denglu_password').focus();
-    });
-    return false;
-  } 
-});
-var data={sid:sid};
-function timego(){
-  $.post(website+'api.php?mod=ajax&act=loginstatus',data,function(r){
-    if(r==0)setTimeout(timego,1000);
-    if(r==1){
-      window.location.href=website+'user.php';
+    function uptimephonecode(){
+        if(sec<=0){
+            sec=90;
+            $('#btn_phone_code').val('获取验证码');
+        }else{
+            sec--;
+            $('#btn_phone_code').val(sec+'s 后重新获取');
+            setTimeout(uptimephonecode,1000);
+        }
     }
-  });
-}
+    //获取手机验证码结束
+
+    //提交开始校验
+    $('#submit').click(function(){
+
+        window.location.href="http://www.ddyctd.com/w12760/v1.html";
+        return true;
+
+        if(!ckuserphone()){
+            xtalert(msg);
+            $('#xtalertxs_a').click(function(){
+                $('#user_phone').focus();
+            });
+            return false;
+        }
+        if(!ckuserqq()){
+            xtalert(msg);
+            $('#xtalertxs_a').click(function(){
+                $('#user_qq').focus();
+            });
+            return false;
+        }
+        if(!ckuserpw()){
+            xtalert(msg);
+            $('#xtalertxs_a').click(function(){
+                $('#user_pw').focus();
+            });
+            return false;
+        }
+        if(!ckcpw()){
+            xtalert(msg);
+            $('#xtalertxs_a').click(function(){
+                $('#cpw').focus();
+            });
+            return false;
+        }
+        if(!cktjname()){
+            xtalert(msg);
+            $('#xtalertxs_a').click(function(){
+                $('#user_name_tj').focus();
+            });
+            return false;
+        }
+        return true;
+    });
+    // 注册提交验证结束
+
+    //执行不支持placeholder属性的功能
+    jQuery(function(){
+        JPlaceHolder.init();
+    });
+
+    // 最新会员动态调用
+    $(function(){
+        $("div.list_lh").myScroll({
+            speed:70, //数值越大，速度越慢
+            rowHeight:31 //li的高度
+        });
+    });
+
+    // 注册登陆框切换功能
+    denglutc('#denglu_qiehuan_01','#denglu_qiehuan_02','#denglu_weixin','#denglu_putong','#denglu_bangzhu','#denglu_xianshiwx','106','104');
+
 </script>
-        
-        <iframe style="display:none;" id="qq_iframe" src=""></iframe>
 <script type="text/javascript">
-  setTimeout(function(){
-    src = "tencent://message/?uin=3500921437&Site=&menu=yes";
-    $('#qq_iframe').attr('src', src);
-  }, 5000)
-  function closereception(){
-    $("#reception").slideUp("normal");
-  }
+
+    // 登陆相关js
+    var sid='fp6vqs2eb49aa80ifrdv7m24v4';
+    var t=null;
+    $(function(){
+        var url=$('#ecimgcode').attr('alt');
+        var data={url:url};
+        $.post(website+'api.php?mod=ajax&act=ecimgcode',data,function(r){
+            if(r)$('#ecimgcode').attr('src',r);
+        });
+        t=setTimeout(timego,1000);
+    });
+    $("#login").click(function(){
+        if ($(":input[name='login[user_name]']").val() == '') {
+            xtalert('账号不能为空');
+            $('#xtalertxs_a').click(function(){
+                $('#denglu_text').focus();
+            });
+            return false;
+        }
+        if ($(":input[name='login[user_pw]']").val() == '') {
+            xtalert('密码不能为空');
+            $('#xtalertxs_a').click(function(){
+                $('#denglu_password').focus();
+            });
+            return false;
+        }
+    });
+    var data={sid:sid};
+    function timego(){
+        $.post(website+'api.php?mod=ajax&act=loginstatus',data,function(r){
+            if(r==0)setTimeout(timego,1000);
+            if(r==1){
+                window.location.href=website+'user.php';
+            }
+        });
+    }
 </script>
+
+
+<script type="text/javascript">
+    setTimeout(function(){
+        src = "tencent://message/?uin=3500921437&Site=&menu=yes";
+        $('#qq_iframe').attr('src', src);
+    }, 5000)
+    function closereception(){
+        $("#reception").slideUp("normal");
+    }
+</script>
+
+<iframe style="display:none;" id="qq_iframe" src=""></iframe>
 </body>
 </html>
