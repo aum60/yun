@@ -9,7 +9,7 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
-return [
+/*return [
     // 生成应用公共文件
     '__file__' => ['common.php', 'config.php', 'database.php'],
 
@@ -22,4 +22,24 @@ return [
         'view'       => ['index/index'],
     ],
     // 其他更多的模块定义
+];*/
+
+
+return [
+    '__file__' => ['hello.php','test.php'],
+// 定义index模块的自动生成
+    'index' => [
+        '__file__' => ['tags.php', 'user.php', 'hello.php'],
+        '__dir__' => ['behavior', 'controller', 'model', 'view'],
+        'controller' => ['Index', 'Test', 'UserType'],
+        'model' => [],
+        'view' => ['index/index'],
+    ],
+// 定义test模块的自动生成
+    'test'=>[
+        '__dir__' => ['behavior','controller','model','widget'],
+        'controller'=> ['Index','Test','UserType'],
+        'model' => ['User','UserType'],
+        'view' => ['index/index','index/test'],
+    ],
 ];
