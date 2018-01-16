@@ -10,21 +10,12 @@
 // +----------------------------------------------------------------------
 
 // [ 应用入口文件 ]
+namespace think;
 
-// 定义应用目录
-define('APP_PATH', __DIR__ . '/../apple/');
+// 加载基础文件
+require __DIR__ . '/../thinkphp/base.php';
 
-//定义配置项目录
-define('CONF_PATH', APP_PATH .'common/conf/');
+// 支持事先使用静态方法设置Request对象和Config对象
 
-//定义公共方法目录
-define('APP_COMM', APP_PATH .'common/common/');
-
-//定义前端目录
-define('APP_HOME_COMM', APP_PATH .'home/common/');
-
-//定义后端目录
-define('APP_ADMIN_COMM', APP_PATH .'admin/common/');
-
-// 加载框架引导文件
-require __DIR__ . '/../thinkphp/start.php';
+// 执行应用并响应
+Container::get('app')->run()->send();
